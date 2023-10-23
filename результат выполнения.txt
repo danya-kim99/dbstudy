@@ -1,0 +1,8 @@
+danya-kim@danya-kim-o dbstudy % node app.js
+Сервер запущен на порту 3000
+Успешное подключение к базе данных
+Результаты запроса: [
+  { employeeId: 1, employeeName: 'Иванов', departmentId: 1 },
+  { employeeId: 2, employeeName: 'Петров', departmentId: 1 },
+  { employeeId: 3, employeeName: 'Сидоров', departmentId: 2 }
+]
