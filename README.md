@@ -26,3 +26,4 @@ INSERT INTO employees (employee_name, department_id) VALUES ('Сидоров', 2
 *Быстрый старт*
 1. npm i
 2. node app.js
+3. http://localhost:3000/api-docs/ - Swagger - документация

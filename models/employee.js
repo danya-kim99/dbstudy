@@ -20,6 +20,7 @@ module.exports = (sequelize) => {
     Employee.belongsTo(sequelize.models.Department, {
         foreignKey: 'department_id',
         onDelete: 'CASCADE',
+        allowNull: false,
     });
 
     return Employee;

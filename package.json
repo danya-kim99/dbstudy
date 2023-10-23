@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/danya-kim99/dbstudy#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "mysql2": "^3.6.2",
-    "sequelize": "^6.33.0"
+    "sequelize": "^6.33.0",
+    "sequelize-cli": "^6.6.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }
