@@ -57,8 +57,12 @@ app.delete('/departments', async (req, res) => {
     try {
         const department = await Department.destroy({
             where: { department_id: department_id },
-          });;
-        res.json(department);
+        });
+        if (department === 1) {
+            res.status(200).json({ message: 'Отдел успешно удален' });
+        } else {
+            res.status(404).json({ error: 'Отдел не найден' });
+        }
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Ошибка при удалении отдела' });
@@ -93,8 +97,13 @@ app.delete('/employees', async (req, res) => {
     try {
         const employee = await Employee.destroy({
             where: { employee_id: employee_id },
-          });
-        res.json(employee);
+        });
+
+        if (employee === 1) {
+            res.status(200).json({ message: 'Работник успешно удален' });
+        } else {
+            res.status(404).json({ error: 'Работник не найден' });
+        }
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Ошибка при удалении работника' });
